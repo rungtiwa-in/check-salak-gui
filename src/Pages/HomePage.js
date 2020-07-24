@@ -25,10 +25,9 @@ class HomePage extends React.Component {
               <Button className="btn-header-section mr-40" size="large">
                 {checkSalakByCID}
               </Button>
-           
               <Button className="btn-header-section" size="large">
                 {checkSalakBySelf}
-              </Button>   
+              </Button>
             </div>
           </div>
         </div>
@@ -40,7 +39,9 @@ class HomePage extends React.Component {
             className="site-layout-background"
             style={{ padding: 24, minHeight: 380 }}
           >
-            Content
+            <div className="title">
+              <div className="title-text">{menuList[3].name}</div>
+            </div>
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
