@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./Asset/Style/App.css";
 import "antd/dist/antd.css";
 import HomePage from "./Pages/HomePage";
 
