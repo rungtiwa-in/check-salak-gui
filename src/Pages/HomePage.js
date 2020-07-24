@@ -1,4 +1,6 @@
 import React from "react";
+import NewsSection from "../Component/NewsSection";
+import Footer from "../Component/Footer";
 import { Layout, Menu, Button } from "antd";
 import logo from "../Asset/Image/logo salak 2.png";
 import { menuList, checkSalakByCID, checkSalakBySelf } from "../Asset/Wording";
@@ -8,7 +10,8 @@ class HomePage extends React.Component {
     super();
   }
   render() {
-    const { Header, Content, Footer } = Layout;
+    const { Header, Content } = Layout;
+
     return (
       <Layout>
         <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
@@ -42,11 +45,13 @@ class HomePage extends React.Component {
             <div className="title">
               <div className="title-text">{menuList[3].name}</div>
             </div>
+            <div style={{ marginTop: 24 }}>
+              <NewsSection />
+            </div>
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
-        </Footer>
+
+        <Footer />
       </Layout>
     );
   }
