@@ -40,6 +40,10 @@
   font-weight: 600;
 }
 
+.ant-card-cover img{
+  height: 200px;
+}
+
 /* ---------------------------- */
 .mt-10 {
   margin-top: 10;

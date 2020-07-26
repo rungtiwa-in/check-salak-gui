@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Card } from "antd";
+import coverNews from '../Asset/Image/cover-news.png'
 
 class NewsSection extends React.Component {
   constructor(props) {
@@ -15,11 +16,11 @@ class NewsSection extends React.Component {
             cover={
               <img
                 alt="example"
-                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                src={coverNews}
               />
             }
           >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta title="สลากออมทรัพย์ทวีสิน" description="ชุด เกษตรมั่นคง 3" />
           </Card>
         </Col>
         <Col span={6}>
@@ -28,11 +29,11 @@ class NewsSection extends React.Component {
             cover={
               <img
                 alt="example"
-                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                src={coverNews}
               />
             }
           >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta title="สลากออมทรัพย์ทวีสิน" description="ชุด เกษตรมั่นคง 3" />
           </Card>
         </Col>
         <Col span={6}>
@@ -41,11 +42,11 @@ class NewsSection extends React.Component {
             cover={
               <img
                 alt="example"
-                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                src={coverNews}
               />
             }
           >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta title="สลากออมทรัพย์ทวีสิน" description="ชุด เกษตรมั่นคง 3" />
           </Card>
         </Col>
         <Col span={6}>
@@ -54,11 +55,11 @@ class NewsSection extends React.Component {
             cover={
               <img
                 alt="example"
-                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                src={coverNews}
               />
             }
           >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta title="สลากออมทรัพย์ทวีสิน" description="ชุด เกษตรมั่นคง 3" />
           </Card>
         </Col>
       </Row>
