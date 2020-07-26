@@ -20,6 +20,10 @@
   background: rgba(0, 0, 0, 0) !important;
 }
 
+.ant-layout-header-nav {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
 .ant-menu.ant-menu-dark.ant-menu-root {
   float: right;
   margin-top: 10px;

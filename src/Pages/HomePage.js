@@ -8,13 +8,27 @@ import { menuList, checkSalakByCID, checkSalakBySelf } from "../Asset/Wording";
 class HomePage extends React.Component {
   constructor() {
     super();
+    this.state = {
+      isTop: true,
+    };
   }
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      console.log(window.scrollY, this.state.isTop);
+      const isTop = window.scrollY < 400;
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop });
+      }
+    });
+  }
+
   render() {
     const { Header, Content } = Layout;
-
+    let classNav = this.state.isTop ? "" : "ant-layout-header-nav";
     return (
       <Layout>
-        <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
+        <Header style={{ position: "fixed", zIndex: 1, width: "100%" }} className={classNav}>
           <img src={logo} className="logo" />
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["0"]}>
             {menuList.map((item, key) => (
