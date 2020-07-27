@@ -1,43 +1,22 @@
 import React from "react";
 import NewsSection from "../Component/NewsSection";
 import Footer from "../Component/Footer";
-import { Layout, Menu, Button } from "antd";
-import logo from "../Asset/Image/logo salak 2.png";
+import Header from "../Component/Header";
+import { Layout, Button } from "antd";
 import { menuList, checkSalakByCID, checkSalakBySelf } from "../Asset/Wording";
 
 class HomePage extends React.Component {
   constructor() {
     super();
-    this.state = {
-      isTop: true,
-    };
-  }
-
-  componentDidMount() {
-    document.addEventListener("scroll", () => {
-      console.log(window.scrollY, this.state.isTop);
-      const isTop = window.scrollY < 400;
-      if (isTop !== this.state.isTop) {
-        this.setState({ isTop });
-      }
-    });
   }
 
   render() {
-    const { Header, Content } = Layout;
-    let classNav = this.state.isTop ? "" : "ant-layout-header-nav";
+    const { Content } = Layout;
     return (
       <Layout>
-        <Header style={{ position: "fixed", zIndex: 1, width: "100%" }} className={classNav}>
-          <img src={logo} className="logo" />
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["0"]}>
-            {menuList.map((item, key) => (
-              <Menu.Item key={key}>{item.name}</Menu.Item>
-            ))}
-          </Menu>
-        </Header>
+        <Header isHomePage={true} />
         <div className="header-image-cover">
-          <div className="header-image">
+          <div className="header-image-home">
             <div className="header-content">
               <Button className="btn-header-section mr-40" size="large">
                 {checkSalakByCID}
