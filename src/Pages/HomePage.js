@@ -16,7 +16,7 @@ class HomePage extends React.Component {
       <Layout>
         <Header isHomePage={true} />
         <div className="header-image-cover">
-          <div className="header-image-home">
+          <div className="header-image">
             <div className="header-content">
               <Button className="btn-header-section mr-40" size="large">
                 {checkSalakByCID}

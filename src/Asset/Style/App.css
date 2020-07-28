@@ -77,31 +77,11 @@
   font-weight: 600 !important;
 }
 
-.header-image-home {
+.header-image {
   background-image: url("../Image/bgRice-Home.jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.header-image-home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: linear-gradient(180deg, #000 -30%, transparent 30%);
-}
-
-.header-image {
-  background-image: url("../Image/bgRice.jpg");
-  background-color: #cccccc;
-  height: 300px;
-  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -114,11 +94,16 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(180deg, #000 -30%, transparent 40%);
+  background-image: linear-gradient(180deg, #000 -30%, transparent 30%);
 }
 
 .header-image-cover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-image-cover.nav {
+  height: 94px;
+  overflow: hidden;
 }
 
 .header-content {
@@ -130,14 +115,12 @@
   color: white;
 }
 
-.header-content .title-page {
-  font-size: 30px;
-  margin-top: 30px;
-  font-weight: 600;
+.title-page {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .header-color {
-  /* background: #035703 !important; */
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 

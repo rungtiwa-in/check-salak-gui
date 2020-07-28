@@ -18,17 +18,15 @@ class CheckSalakByCIDPage extends React.Component {
     return (
       <Layout>
         <Header isHomePage={false} />
-        <div className="header-image-cover">
+        <div className="header-image-cover nav">
           <div className="header-image">
-            <div className="header-content">
-              <div className="title-page">{checkSalakByCID}</div>
-            </div>
           </div>
         </div>
         <Content
           className="site-layout"
           style={{ padding: "0 50px", marginTop: 24 }}
         >
+              <div className="title-page">{checkSalakByCID}</div>
           <div
             className="site-layout-background"
             style={{ padding: 24, minHeight: 380 }}
