@@ -1,21 +1,19 @@
 import React from "react";
-import { Layout, Menu, Form, Input, Button } from "antd";
+import { Layout } from "antd";
 import Footer from "../Component/Footer";
 import Header from "../Component/Header";
+import InputFormCID from "../Component/InputFormCID";
+import ResultFormCID from "../Component/ResultFormCID";
 import { checkSalakByCID } from "../Asset/Wording";
 
 class CheckSalakByCIDPage extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.status = {
+      isSubmitForm: false,
+    };
   }
   render() {
-    const layout = {
-      labelCol: { span: 8 },
-      wrapperCol: { span: 16 },
-    };
-    const tailLayout = {
-      wrapperCol: { offset: 8, span: 16 },
-    };
     const { Content } = Layout;
     return (
       <Layout>
@@ -35,10 +33,10 @@ class CheckSalakByCIDPage extends React.Component {
             className="site-layout-background"
             style={{ padding: 24, minHeight: 380 }}
           >
-            <div>{checkSalakByCID}</div>
+            {/* {this.state.isSubmitForm ? <ResultFormCID /> : <InputFormCID />} */}
+            <InputFormCID />
           </div>
         </Content>
-
         <Footer />
       </Layout>
     );

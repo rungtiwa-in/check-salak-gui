@@ -87,6 +87,16 @@
   position: relative;
 }
 
+.header-image-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, #000 -30%, transparent 30%);
+}
+
 .header-image {
   background-image: url("../Image/bgRice.jpg");
   background-color: #cccccc;
@@ -95,6 +105,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, #000 -30%, transparent 40%);
 }
 
 .header-image-cover {

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Asset/Style/App.css";
 import "antd/dist/antd.css";
+import "./Asset/Style/App.css";
 import HomePage from "./Pages/HomePage";
 import CheckSalakByCIDPage from "./Pages/CheckSalakByCIDPage";
 import CheckSalakBySelfPage from "./Pages/CheckSalakBySelfPage";
